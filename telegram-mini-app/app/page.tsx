@@ -1,7 +1,11 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-black">
-      <h1 className="text-4xl font-bold text-white">Soon...</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center bg-black p-4">
+      <div className="relative flex place-items-center">
+        <h1 className="text-6xl font-bold text-white tracking-wider">
+          Soon...
+        </h1>
+      </div>
     </main>
   );
 } 
