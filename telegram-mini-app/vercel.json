@@ -1,14 +1,18 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
-  "outputDirectory": "out",
   "installCommand": "npm install",
   "framework": "nextjs",
   "builds": [
     {
-      "src": "package.json",
+      "src": "src/app/**/*",
       "use": "@vercel/next"
     }
   ],
-  "public": true
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/app/$1"
+    }
+  ]
 } 
