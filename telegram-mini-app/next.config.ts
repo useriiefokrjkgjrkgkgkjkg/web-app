@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  trailingSlash: true,
-  distDir: '.next',
-  reactStrictMode: true,
-  swcMinify: true
+  output: 'export',
+  images: {
+    unoptimized: true
+  }
 };
 
 export default nextConfig;
