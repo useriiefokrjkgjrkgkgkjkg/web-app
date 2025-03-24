@@ -1,5 +1,21 @@
-*.js linguist-language=JavaScript
-*.jsx linguist-language=JavaScript
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+node_modules/* linguist-vendored
+*.generated.* linguist-generated
+*.config.* linguist-language=TypeScript
+
+# TypeScript
 *.ts linguist-language=TypeScript
 *.tsx linguist-language=TypeScript
-*.css linguist-language=CSS 
+
+# JavaScript
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+
+# Documentation
+*.md linguist-documentation
+*.txt linguist-documentation 
